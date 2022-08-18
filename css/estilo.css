@@ -1,0 +1,86 @@
+*{
+    /* background: #0d99ff; */
+    background: #f3f5fc;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.hoja{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .encabezado{
+        background: #000000;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        align-items: center;
+    }
+        .logo{
+            background: orange;
+            flex: 1 1 auto;
+            height: 50px;
+        }
+        .titulo{
+            background: lightsalmon;
+            flex: 4 1 auto;
+            height: 50px;
+        }
+    .cuerpo{
+        background: #000000;
+        display: flex;
+    }
+        .ingreso{
+            background: red;
+            flex: 2 1 auto;
+        }
+            .entrada{
+                background: green;
+            }
+            .botones{
+                background: lightgreen;
+                display: flex;
+                flex-flow: row wrap;
+            }
+                .encriptar{
+                    background: yellow;
+                    flex: 1 1 auto;
+                }
+                .desencriptar{
+                    background: yellowgreen;
+                    flex: 1 1 auto;
+                }
+        .resultado{
+            background: violet;
+            flex: 1 1 auto;
+        }
+            .imagen{
+                background: whitesmoke;
+            }
+            .texto{
+                background: brown;
+            }
+            .copiar{
+                background: orangered;
+            }
+    .pie{
+        background: #000000;
+        display: flex;
+        justify-content: center;
+    }
+        .pie p{
+            width: 500px;
+            background: yellow;
+        }
+
+@media all and (max-width: 800px){
+    .cuerpo{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 600px){
+    .botones{
+        flex-direction: column;
+    }
+}
